@@ -10,7 +10,6 @@
 	"author": "anzerr",
 	"license": "MIT",
 	"devDependencies": {
-		"eslint": "5.11.1",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"eslintConfig": {
