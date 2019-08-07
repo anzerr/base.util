@@ -4,7 +4,8 @@ base encoding / decoding of any given alphabet
 
 #### `Install`
 ``` bash
-npm install --save git+https://git@github.com/anzerr/base.util.git
+npm install --save git+https://github.com/anzerr/base.util.git
+npm install --save @anzerr/base.util
 ```
 
 ### `Example`
