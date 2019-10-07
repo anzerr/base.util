@@ -22,7 +22,7 @@ declare class Base {
 
 }
 
-declare class Util {
+export {
 	bc2: Base;
 	bc8: Base;
 	bc11: Base;
@@ -37,7 +37,4 @@ declare class Util {
 	b32: Base;
 	Compress: Base;
 	Base: Base;
-}
-
-declare const _default: Util;
-export default _default;
+};
