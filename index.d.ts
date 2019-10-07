@@ -22,19 +22,24 @@ declare class Base {
 
 }
 
-export {
-	bc2: Base,
-	bc8: Base,
-	bc11: Base,
-	bc16: Base,
-	bc32: Base,
-	bc36: Base,
-	bc58: Base,
-	bc62: Base,
-	bc64: Base,
-	bc66: Base,
-	b16: Base,
-	b32: Base,
-	Compress: Base,
-	Base: Base
-};
+declare class Util {
+
+	bc2: Base;
+	bc8: Base;
+	bc11: Base;
+	bc16: Base;
+	bc32: Base;
+	bc36: Base;
+	bc58: Base;
+	bc62: Base;
+	bc64: Base;
+	bc66: Base;
+	b16: Base;
+	b32: Base;
+	Compress: Base;
+	Base: Base;
+
+}
+
+const _default: Util;
+export = _default;
