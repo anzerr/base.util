@@ -1,8 +1,8 @@
 
-const Map = require('./map.js'),
+const Map = require('../map.js'),
 	is = require('type.util');
 
-class Base {
+class Compress {
 
 	constructor(alphabet) {
 		this.map = new Map(alphabet);
@@ -49,23 +49,9 @@ class Base {
 			i++;
 		}
 		if (toString) {
-			return this.toString(out);
+			return this.map.toString(out);
 		}
 		return out;
-	}
-
-	toString(buffer) {
-		if (!Buffer.isBuffer(buffer)) {
-			throw new Error('Expected Buffer');
-		}
-		let str = '';
-		for (let i = 0; i < buffer.length; i++) {
-			if (!is.defined(this.map.alphabet[buffer[i]])) {
-				throw new Error(`Non-base "${this.map.base}" character`);
-			}
-			str += String.fromCharCode(this.map.alphabet[buffer[i]]);
-		}
-		return str;
 	}
 
 	decode(source) {
@@ -118,4 +104,4 @@ class Base {
 
 }
 
-module.exports = Base;
+module.exports = Compress;
