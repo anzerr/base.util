@@ -1,17 +1,29 @@
 {
 	"name": "base.util",
 	"version": "1.0.8",
-	"description": "",
+	"description": "base encoding / decoding of any given alphabet",
+	"keywords": [
+		"base",
+		"base32",
+		"base58",
+		"node",
+		"util"
+	],
+	"homepage": "https://github.com/anzerr/base.util#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/base.util/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/base.util.git"
+	},
+	"license": "MIT",
+	"author": "anzerr",
 	"main": "index.js",
+	"types": "index.d.ts",
 	"scripts": {
 		"linter": "eslint src/*",
 		"test": "npm run linter && node test"
-	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
@@ -19,16 +31,10 @@
 	"dependencies": {
 		"type.util": "git+https://git@github.com/anzerr/type.util.git"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:anzerr/base.util.git"
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/base.util/issues"
-	},
-	"homepage": "https://github.com/anzerr/base.util#readme"
+	}
 }
