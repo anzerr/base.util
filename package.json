@@ -1,6 +1,6 @@
 {
 	"name": "base.util",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "base encoding / decoding of any given alphabet",
 	"keywords": [
 		"base",
